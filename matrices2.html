@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var cad1 = "Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo";
+        var cad2 = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
+        var dias = new Array;
+        var ciudades = new Array;
+        dias=(cad1.split(","));
+        ciudades=(cad2.split("."));
+    
+        alert(dias);
+        alert(ciudades);
+
+        var conciertos=new Array(7);
+        conciertos[0] = dias;
+        conciertos[1] = ciudades;
+
+        for (var i=0; i<conciertos.length; i++){
+            for(var j=0; j<conciertos[i].length; j++){
+               
+                document.write(conciertos[i][j])
+            }     
+           
+        }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
